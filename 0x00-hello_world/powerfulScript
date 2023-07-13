@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "input file's name:"
+read filename
+echo "#!/bin/bash" > ${filename}
+vi ${filename}
+chmod u+x ${filename}
