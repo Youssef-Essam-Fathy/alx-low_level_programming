@@ -1,1 +1,1 @@
-This is C readme file
+Variables readme file
