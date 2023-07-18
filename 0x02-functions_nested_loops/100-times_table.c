@@ -8,14 +8,14 @@
 
 void print_times_table(int n)
 {
-	if (n !> 15 || n !< 0)
+	if (n <= 15 || n > 0)
 	{
 		int mult, prod;
 
 		for (mult = 1; mult <= 15; mult++)
 		{
 			prod = n * mult;
-			printf("0, %d", prod)
+			printf("0, %d", prod);
 		}
 	}
 }
