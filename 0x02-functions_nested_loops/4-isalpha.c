@@ -2,7 +2,7 @@
 
 /**
  *_isalpha - use the _islower function to check
- *              for lowercase characters
+ *              for letters
  *@c: a function input checker
  *
  *Return: returns 1 if 'c' is a letter
