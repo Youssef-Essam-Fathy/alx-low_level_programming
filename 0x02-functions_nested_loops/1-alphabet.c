@@ -1,24 +1,21 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * main - Entry point
  *
- * Description: 'A program to print alphabets
+ * Description: 'A program to print a string output
  *
  * Return: Always 0 (success)
  **/
 
-void print_alphabet(void);
 int main(void)
 {
-	print_alphabet();
-	putchar('\n');
-	return (0);
-}
-/*print_alphabet - this is my function description*/
-void print_alphapet(void)
-{
-	for (char ch = 'a'; ch <= 'z'; ch++)
+	int ch;
+
+	for (ch = 97; ch <= 122; ch++)
 	{
 		putchar(ch);
 	}
+	putchar('\n');
+	return (0);
 }

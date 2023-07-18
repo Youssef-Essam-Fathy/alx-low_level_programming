@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Variables in C programming"
+git commit -m "Functions and nested_loops in C programming"
 git push
