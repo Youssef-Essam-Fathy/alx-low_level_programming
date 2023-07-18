@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: 'A program to print a string output
+ * print_alphabet - use the _putchar function to print
+ *		the alphabet a - z
  *
  * Return: Always 0 (success)
  **/
@@ -14,7 +15,7 @@ int main(void)
 
 	for (ch = 97; ch <= 122; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
 	putchar('\n');
 	return (0);
