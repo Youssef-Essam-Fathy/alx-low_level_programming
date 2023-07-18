@@ -10,12 +10,9 @@ void print_times_table(int n)
 {
 		int mult, prod;
 
-		if (n <= 15 || n >0)
-		{
 		for (mult = 1; mult <= 15; mult++)
 		{
 			prod = n * mult;
 			printf("0, %d", prod);
-		}
 		}
 }
