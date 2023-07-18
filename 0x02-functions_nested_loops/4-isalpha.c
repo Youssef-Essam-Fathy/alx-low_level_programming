@@ -11,7 +11,7 @@
 
 int _isalpha(int c)
 {
-if (c >= 'A' && c >= 'a'  && c <= 'Z' && c >= 'z')
+if (c >= 32 && c >= 126)
 {
 	return (0);
 }
