@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - use the _putchar function to print
- *		the alphabet a - z
+ * print_alphabet_x10 - use the _putchar function to print
+ *              the alphabet a - z 10 times
  **/
-
 void print_alphabet_x10(void)
 {
-	int ch;
-
-	for (ch = 97; ch <= 122; ch++)
-	{
-		_putchar(ch * 10);
-	}
-	_putchar('\n');
+int line, ch;
+for (line = 0; line <= 9; line++)
+{
+for (ch = 97; ch <= 122; ch++)
+{
+_putchar(ch);
+}
+_putchar('\n');
+}
 }
