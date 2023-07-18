@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_to_98 - a void function that prints to 98
+ * print_to_98 - a void function that prints n to 98 counts
  *
  * @n: a function integer parameter
  **/
