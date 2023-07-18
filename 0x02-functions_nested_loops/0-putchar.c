@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'A program to print a string output'
- *@printf: prints a formated output
+ * Description: 'A program to print a string output
  *
  * Return: Always 0 (success)
  **/
