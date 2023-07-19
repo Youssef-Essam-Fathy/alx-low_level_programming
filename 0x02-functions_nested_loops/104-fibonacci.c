@@ -40,8 +40,8 @@ int main(void)
 	for (count = 1; count <= 98; count++)
 	{
 		if (f1o > 0)
-			printf("%lu", f10);
-		intial0s = numLength(mx) - 1 - numLength(f1);
+			printf("%lu", f1o);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
 		while (f1o > 0 && intial0s > 0)
 		{
@@ -49,7 +49,7 @@ int main(void)
 			intial0s--;
 		}
 
-		printf("lu", f1);
+		printf("%lu", f1);
 
 		sum = (f1 + f2) % mx;
 		f1 = f2;
