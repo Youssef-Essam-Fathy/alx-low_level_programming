@@ -11,24 +11,23 @@
 
 int main(void)
 {
-	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
+	float total_sum;
 
-	for (count = 0; count < 10; count++)
+	while (1)
 	{
 		sum = fib1 + fib2;
 
-		if (sum % 2 == 0)
-			printf("%lu", sum);
+		if (sum > 4000000)
+			break;
+
+		if ((sum % 2) == 0)
+			total_sum += sum;
 
 		fib1 = fib2;
 		fib2 = sum;
-
-		if (count == 9)
-			printf("\n");
-		else
-			printf(", ");
 	}
+	printf("%.0f\n", total_sum);
 
 	return (0);
 }
