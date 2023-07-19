@@ -43,7 +43,7 @@ int main(void)
 			printf("%lu", f1o);
 		initial0s = numLength(mx) - 1 - numLength(f1);
 
-		while (f1o > 0 && intial0s > 0)
+		while (f1o > 0 && initial0s > 0)
 		{
 			printf("%d", 0);
 			intial0s--;
