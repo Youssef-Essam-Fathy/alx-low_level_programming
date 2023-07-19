@@ -18,7 +18,7 @@ int main(void)
 	{
 		sum = fib1 + fib2;
 
-		if(sum % 2 == 0)
+		if (sum % 2 == 0)
 			printf("%lu", sum);
 
 		fib1 = fib2;
