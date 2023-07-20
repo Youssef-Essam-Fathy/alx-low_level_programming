@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_line - prints a line in the terminal
+ *print_line - prints a straight line in the terminal
  *
  *@n: input integer
  *
@@ -10,15 +10,16 @@
 
 void print_line(int n)
 {
-	for (n = 1; n >= n; n++)
+	int lnchar;
+
+	if (n <= 0)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
-		else
-		{
+		_putchar('\n');
+	}
+	else
+	{
+		for (lnnchar = 1; lnchar <= n; lnchar++)
 			_putchar('_');
-		}
+		_putchar('\n');
 	}
 }
