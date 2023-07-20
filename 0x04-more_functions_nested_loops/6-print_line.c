@@ -10,7 +10,7 @@
 
 void print_line(int n)
 {
-	int lnchar;
+	int lnch;
 
 	if (n <= 0)
 	{
@@ -18,7 +18,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (lnnchar = 1; lnchar <= n; lnchar++)
+		for (lnch = 1; lnch <= n; lnch++)
 			_putchar('_');
 		_putchar('\n');
 	}
