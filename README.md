@@ -1,1 +1,1 @@
-Readme file c programmming
+C programming repo
