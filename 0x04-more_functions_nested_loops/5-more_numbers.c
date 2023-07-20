@@ -9,18 +9,20 @@
 
 void more_numbers(void)
 {
-	int num1, num2, count;
+	int num, line, count;
 
-	for (count = 0; count <= 9; count++)
+	for (line = 1; line <= 10; line++)
 	{
-		for (num1 = 48; num1 <= 57; num1++)
+		for (count = 0; count <= 14; count++)
 		{
-			_putchar(num1);
+			num = count;
+			if (count > 9)
+			{
+				_putchar(1 + 48);
+				num = count % 10;
+			}
+			_putchar(num + 48);
 		}
-		for (num2 = 48; num2 <= 52; num2++)
-		{
-			_putchar('1');
-			_putchar(num2);
-		}
+		_putxhar('\n');
 	}
 }
