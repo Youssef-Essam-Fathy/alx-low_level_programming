@@ -6,8 +6,7 @@
  *@a: an integer input
  *@b: an integer input
  *
- * Return: 1 in case uppercase letter
- *	always 0 (Success)
+ * Return: multiplication of two integers
  **/
 
 int mul(int a, int b)
