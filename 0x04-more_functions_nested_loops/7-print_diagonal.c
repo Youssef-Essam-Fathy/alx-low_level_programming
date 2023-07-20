@@ -10,7 +10,7 @@
 
 void print_diagonal(int n)
 {
-	int lnch;
+	int diagchr, space;
 
 	if (n <= 0)
 	{
@@ -18,8 +18,12 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (lnch = 1; lnch <= n; lnch++)
+		for (diagchr = 1; diagchr <= n; diagchr++)
+		{
+			for (space = 1; space <= diagchr; space++)
+				_putchar(' ');
 			_putchar(92);
-		_putchar('\n');
+			_putchar('\n');
+		}
 	}
 }
