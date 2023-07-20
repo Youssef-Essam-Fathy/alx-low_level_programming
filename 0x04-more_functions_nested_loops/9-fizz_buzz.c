@@ -3,7 +3,7 @@
 /**
  *main - Entry point
  *
- * Retuurn: always 0 (Success)
+ * Return: always 0 (Success)
  **/
 
 int main(void)
@@ -20,11 +20,11 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", i);
+		if (i != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	if (i != 100)
-		printf(" ");
-	else
-		printf("\n");
 
 	return (0);
 }
