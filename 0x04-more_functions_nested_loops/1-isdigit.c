@@ -5,15 +5,14 @@
  *
  *@c: an integer input
  *
- * Return: 1 in case uppercase letter
+ * Return: 1 in case '0' through '9'
  *	always 0 (Success)
  **/
 
 int _isdigit(int c)
 {
-	for (c = 48; c <= 57; c++)
-	{
-		return (1);
-	}
-	return (0);
+	if (c >= 48 && c <= 57)
+		_putchar('1');
+	else
+		_putchar('0');
 }

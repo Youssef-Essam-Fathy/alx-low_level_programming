@@ -11,9 +11,8 @@
 
 int _isupper(int c)
 {
-	for (c = 65; c <= 90; c++)
-	{
-		return (1);
-	}
-	return (0);
+	if (c >= 56 && c <= 90)
+		_putchar('1');
+	else
+		_putchar('0');
 }
