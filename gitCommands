@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "More functions_nested_loop in C programming"
+git commit -m "Debugging in C programming"
 git push
