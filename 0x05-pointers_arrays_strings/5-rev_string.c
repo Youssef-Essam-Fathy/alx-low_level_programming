@@ -10,11 +10,18 @@
 
 void rev_string(char *s)
 {
-	int i = 0;
+	int l, i;
+	char temp;
 
-	while (s[i])
-		i++;
-	while (i--)
-		_putchar(s[i]);
-	_putchar('\n');
+	/*find string length without null character*/
+	for (l = 0; s[l] != '\0'; ++l)
+		;
+
+	/*swap the string by looping to its half*/
+	for (i = 0; i < l / 2; i++)
+	{
+		temp = s[i];
+		s[i] = s[l - 1  - i];/*1 as the array starts at 0*/
+		s[l - 1  - i] = temp;
+	}
 }
