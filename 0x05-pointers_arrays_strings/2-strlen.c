@@ -5,10 +5,15 @@
  *
  * @s: character pointer = string
  *
- * Return: integer value
+ * Return: string length
  **/
 
 int _strlen(char *s)
 {
-	size_t strlen(s);
+	int counter;
+
+	for (counter = 0; *s != '\0'; s++)
+		++counter;
+
+	return (counter);
 }
