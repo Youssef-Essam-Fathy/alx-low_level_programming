@@ -11,7 +11,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char n1, n2;
+	int n1, n2;
 	char *ptr;
 
 	for (n1 = 0; s[n1] != '\0'; n1++)
