@@ -13,7 +13,7 @@
 int chk_prim(int in, int othrin);
 int is_prime_number(int n)
 {
-	return (chk_prim(in, 2));
+	return (chk_prim(n, 2));
 }
 
 /**
