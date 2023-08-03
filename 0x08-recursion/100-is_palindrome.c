@@ -16,7 +16,7 @@ int lst_indx(char *str)
 
 	if (*str > '\0')
 	{
-		num += lst_indx(s + 1) + 1;
+		num += lst_indx(str + 1) + 1;
 	}
 
 	return (num);
