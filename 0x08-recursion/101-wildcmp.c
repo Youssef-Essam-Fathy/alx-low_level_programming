@@ -28,7 +28,7 @@ int inception(char *s1, char *s2)
 	if (*s1 == 0)
 		return (0);
 	if (*s1 == *s2)
-		t += wildcmpr(s1 + 1, s2 + 1);
+		t += wildcmp(s1 + 1, s2 + 1);
 	t += inception(s1 + 1, s2);
 	return (t);
 }
@@ -40,7 +40,7 @@ int inception(char *s1, char *s2)
  * Return: 1 if identical, 0 if not identical
  **/
 
-int wildcmpr(char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 	int t = 0;
 
@@ -50,7 +50,7 @@ int wildcmpr(char *s1, char *s2)
 	{
 		if (!*s1)
 			return (1);
-		return (wildcmpr(s1 + 1, *s2 == '*' ? s2 : s2 + 1));
+		return (wildcmp(s1 + 1, *s2 == '*' ? s2 : s2 + 1));
 	}
 	if (!*s1 || !s2)
 		return (0);
@@ -60,7 +60,7 @@ int wildcmpr(char *s1, char *s2)
 		if (!*s2)
 			return (1);
 		if (*s1 == *s2)
-			t += wildcmpr(s1 + 1, s2 + 1);
+			t += wildcmp(s1 + 1, s2 + 1);
 		t += inception(s1, s2);
 		return (!!t);
 
