@@ -16,10 +16,10 @@ int lst_indx(char *str)
 
 	if (*str > '\0')
 	{
-		n += lst_indx(s + 1) + 1;
+		num += lst_indx(s + 1) + 1;
 	}
 
-	return (n);
+	return (num);
 }
 
 /**
