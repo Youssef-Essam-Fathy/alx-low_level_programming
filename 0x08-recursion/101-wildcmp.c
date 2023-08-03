@@ -34,7 +34,7 @@ int inception(char *s1, char *s2)
 }
 
 /**
- * wildcmpr - compares two strings
+ * wildcmp - compares two strings
  * @s1: the first string
  * @s2: the second string
  * Return: 1 if identical, 0 if not identical
@@ -63,7 +63,6 @@ int wildcmp(char *s1, char *s2)
 			t += wildcmp(s1 + 1, s2 + 1);
 		t += inception(s1, s2);
 		return (!!t);
-
 	}
 	return (0);
 }
