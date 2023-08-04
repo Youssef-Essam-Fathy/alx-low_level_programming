@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Debugging in C programming"
+git commit -m "Static libraries"
 git push
