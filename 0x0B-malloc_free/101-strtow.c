@@ -69,7 +69,7 @@ char **strtow(char *str)
 			indx += indx1;
 		}
 		else
-			i++;
+			indx++;
 	}
 	return (ary);
 }
