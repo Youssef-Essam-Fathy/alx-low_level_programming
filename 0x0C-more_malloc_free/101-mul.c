@@ -37,7 +37,7 @@ int _atoi(const char *str)
 		}
 	}
 
-	for (indx = frst_num; str[frst_num] >= 48 && str[frst_num] <= 57; indx++)
+	for (indx = frst_num; str[indx] >= 48 && str[indx] <= 57; indx++)
 	{
 		rsp *= 10;
 		rsp += (str[indx] - 48);
@@ -73,7 +73,7 @@ void print_int(unsigned long int num)
  * Return: always 0 (Success)
  **/
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 
@@ -82,7 +82,6 @@ int main(int argc, char *argv[])
 		_puts("Error");
 		exit(98);
 	}
-
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 
