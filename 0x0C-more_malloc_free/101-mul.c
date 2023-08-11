@@ -4,55 +4,52 @@
 
 /**
  * _isdigit - checks if character is digit
- * @c: the character to check
- *
+ * @ch: the character to check
  * Return: 1 if digit, 0 otherwise
  */
-int _isdigit(int c)
+int _isdigit(int ch)
 {
-	return (c >= '0' && c <= '9');
+	return (ch >= '0' && ch <= '9');
 }
 
 /**
  * _strlen - returns the length of a string
- * @s: the string whose length to check
- *
+ * @str: the string whose length to check
  * Return: integer length of string
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	int i = 0;
+	int indx = 0;
 
-	while (*s++)
-		i++;
-	return (i);
+	while (*str++)
+		indx++;
+	return (indx);
 }
 
 /**
  * big_multiply - multiply two big number strings
- * @s1: the first big number string
- * @s2: the second big number string
- *
+ * @str1: the first big number string
+ * @str2: the second big number string
  * Return: the product big number string
  */
-char *big_multiply(char *s1, char *s2)
+char *big_multiply(char *str1, char *str2)
 {
-	char *r;
+	char *ptr;
 	int l1, l2, a, b, c, x;
 
 	l1 = _strlen(s1);
 	l2 = _strlen(s2);
-	r = malloc(a = x = l1 + l2);
-	if (!r)
+	ptr = malloc(a = x = l1 + l2);
+	if (!ptr)
 		printf("Error\n"), exit(98);
 	while (a--)
-		r[a] = 0;
+		ptr[a] = 0;
 
 	for (l1--; l1 >= 0; l1--)
 	{
 		if (!_isdigit(s1[l1]))
 		{
-			free(r);
+			free(ptr);
 			printf("Error\n"), exit(98);
 		}
 		a = s1[l1] - '0';
@@ -62,20 +59,20 @@ char *big_multiply(char *s1, char *s2)
 		{
 			if (!_isdigit(s2[l2]))
 			{
-				free(r);
+				free(ptr);
 				printf("Error\n"), exit(98);
 			}
 			b = s2[l2] - '0';
 
 			c += r[l1 + l2 + 1] + (a * b);
-			r[l1 + l2 + 1] = c % 10;
+			ptr[l1 + l2 + 1] = c % 10;
 
 			c /= 10;
 		}
 		if (c)
-			r[l1 + l2 + 1] += c;
+			ptr[l1 + l2 + 1] += c;
 	}
-	return (r);
+	return (ptr);
 }
 
 
