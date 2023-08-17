@@ -9,11 +9,12 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list pa;
+	va_list ap;
 	int i = n, sum = 0;
 
 	va_start(ap, n); /* intialize the argument list */
-	if (n == 0)
+	i
+		f (n == 0)
 		return (0);
 
 	while (i--)
