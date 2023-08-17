@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Function pointers"
+git commit -m "Variadic functions"
 git push
