@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	op_fun = get_op_func(argv[2]);
 	if (!op_fun)
-		printf("Error\n"), ecit(99);
+		printf("Error\n"), exit(99);
 
 	if (!num2 && (argv[2][0] == '/' || argv[2][0] == '%'))
 		printf("Error\n"), exit(100);
