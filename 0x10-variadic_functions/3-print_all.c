@@ -41,15 +41,15 @@ void format_float(char *separator, va_list ap)
 
 void format_string(char *separator, va_list ap)
 {
-	char *s = va_arg(ap, char*);
+	char *str = va_arg(ap, char*);
 
-	switch ((int)(!s))
+	switch ((int)(!str))
 	{
 		case 1:
-			s = "(nil)";
+			str = "(nil)";
 	}
 
-	printf("%s%s", separator, s);
+	printf("%s%s", separator, str);
 }
 
 /**
