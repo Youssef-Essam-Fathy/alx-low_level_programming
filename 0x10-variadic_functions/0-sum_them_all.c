@@ -13,8 +13,7 @@ int sum_them_all(const unsigned int n, ...)
 	int i = n, sum = 0;
 
 	va_start(ap, n); /* intialize the argument list */
-	i
-		f (n == 0)
+	if (n == 0)
 		return (0);
 
 	while (i--)
