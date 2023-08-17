@@ -19,6 +19,6 @@ int sum_them_all(const unsigned int n, ...)
 	while (i--)
 		sum += va_arg(ap, int); /* get the next argument value */
 
-	av_end(ap); /* clean up */
+	va_end(ap); /* clean up */
 	return (sum);
 }
