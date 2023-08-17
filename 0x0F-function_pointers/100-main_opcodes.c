@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	if (bytes < 0)
 		printf("Error\n"), exit(2);
 
-	while (b--)
+	while (bytes--)
 		printf("%02hhx%s", *ptr++, bytes ? " " : "\n");
 	return (0);
 }
