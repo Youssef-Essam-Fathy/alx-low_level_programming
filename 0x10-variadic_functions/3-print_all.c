@@ -43,8 +43,11 @@ void format_string(char *separator, va_list ap)
 {
 	char *str = va_arg(ap, char*);
 
-	if (str = NULL)
-		printf("(nil)");
+	switch ((int)(!str))
+	{
+		case 1:
+			str = "(nil)";
+	}
 
 	printf("%s%s", separator, str);
 }
@@ -71,7 +74,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (tokens[i].token)
+		while (tokens[j].token)
 		{
 			if (format[i] == tokens[j].token[0])
 			{
