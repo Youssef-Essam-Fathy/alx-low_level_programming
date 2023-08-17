@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	int *ptr = (char *) main;
+	char *ptr = (char *) main;
 	int bytes;
 
 	if (argc != 2)
