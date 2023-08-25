@@ -1,6 +1,6 @@
 section		.txt
-	extern printf
-	global main
+	extern	printf
+	global	main
 
 main:
 	mov		edi, req
