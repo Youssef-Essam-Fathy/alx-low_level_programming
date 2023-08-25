@@ -3,7 +3,7 @@
 void _constructor(void) __attribute__ ((constructor));
 
 /**
- * _constructor : implemented before main()
+ * _constructor - implemented before main()
  * Return: void
  **/
 void _constructor(void)
