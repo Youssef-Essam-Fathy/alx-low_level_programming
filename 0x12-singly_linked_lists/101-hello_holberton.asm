@@ -1,4 +1,4 @@
-section		.txt
+section		.text
 	extern	printf
 	global	main
 
