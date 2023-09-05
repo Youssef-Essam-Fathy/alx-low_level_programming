@@ -13,13 +13,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t bys;
 	char buff[READ_BUFF_SIZE * 8];
 
-	if (!letters || !filename)
+	if (!filename || !letters)
 		return (0);
-
-	fd = open(filename, O_RDWR);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-
 	bys = read(fd, &buff[0], letters);
 	bys = write(STDOUT_FILENO, &buff[0], bys);
 	close(fd);
