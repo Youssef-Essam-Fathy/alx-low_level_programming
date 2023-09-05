@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <string.h>
+#include <unistd.h>
 
 #define READ_BUFF_SIZE 1024
 
