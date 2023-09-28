@@ -23,4 +23,3 @@ void print_binary(unsigned long int n)
 	if (!displayed)
 		putchar('0');
 }
-

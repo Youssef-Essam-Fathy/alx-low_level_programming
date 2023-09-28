@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * get_endianness - checks the endianness
- * Return: 0 if big endian, 1 if little endian
+ * get_bit - returns the value of a bit at a given index
+ * @n: number to display
+ * @index: positive index
+ * Return: index or -1 if an error occured
  **/
 
-int get_endianness(void)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int n = 1;
-
-	return (*(char *)&n);
+	if (index >= sizeof(n) * 8)
+		return (-1);
+	return (n >> index & 1);
 }
 
