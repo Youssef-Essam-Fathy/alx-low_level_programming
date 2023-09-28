@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "File I/O"
+git commit -m "Bit manipulation"
 git push
