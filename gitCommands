@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "0x17-doubly_linked_lists"
+git commit -m "0x18-dynamic_libraries"
 git push
